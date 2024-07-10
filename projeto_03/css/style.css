@@ -43,13 +43,15 @@ nav.mobile-menu{
 	background-size: 100% 100%;
 }
 
+/*
 nav.mobile-menu:hover ul{
 	opacity: 1;
 }
+*/
 
 nav.mobile-menu ul{
-	opacity: 0;
-	transition: 1s;
+	display: none;
+	/*transition: 1s;*/
 	background-color: white;
 	position: absolute;
 	width: 100%;
@@ -71,6 +73,7 @@ nav.mobile-menu ul li:hover{
 
 nav.mobile-menu ul li a{
 	color: black;
+	display: block;
 	text-decoration: none;
 }
 
@@ -252,10 +255,20 @@ section.sessao1 .container{
 	background: white;
 }
 
+.scrollEquipe{
+	max-width: 600px;
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+.scroll-wraper{
+	width: 100%;
+}
+
 .sobre-autor{
 	float: left;
-	max-width: 600px;
-	padding-left: 30px;
+	width: 100%;
+	padding:0 20px;
 }
 
 .titulo-autor{
@@ -305,7 +318,7 @@ section.sessao1 .container{
 .slider-bullets{
 	width: 100%;
 	float: left;
-	padding-left: 30px;
+	padding-left: 40px;
 	margin-top:12px;
 }
 
@@ -349,7 +362,9 @@ section.sessao4{
 	margin-top:15px;
 }
 
-.form form input[type=text]{
+.form form input[type=text],
+.form form input[type=email]
+{
 	width: 90%;
 	max-width: 480px;
 	margin-top:8px;
